@@ -1,0 +1,29 @@
+1. Show the name for the countries that have a population of at least 200 million.
+
+SELECT name
+FROM world
+WHERE population > 200000000
+
+2. Show the name and population in millions for the countries of the continent 'South America'.
+
+SELECT name, population/1000000
+FROM world
+WHERE continent like "South America"
+
+3. Show the name and population for France, Germany, Italy.
+
+SELECT name, population
+FROM world
+WHERE name IN ("France", "Germany", "Italy")
+
+4. Shows countries with an area of 200,000-250,000 sq. km
+
+SELECT name, area
+FROM world
+WHERE area BETWEEN 200000 AND 250000
+
+5. Show the countries which have a name that includes the word 'United'.
+
+SELECT name
+FROM world
+WHERE name LIKE "%United%"
