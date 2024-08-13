@@ -21,5 +21,3 @@ WHERE teamid LIKE "%GER%"
 SELECT team1, team2 , player
 FROM game JOIN goal ON (id=matchid)
 WHERE player LIKE "Mario%"
-
-5. 
